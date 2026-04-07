@@ -1,4 +1,4 @@
-/* Dark Mode Styles */
+/* Dark Mode Styles - Complete */
 
 [data-theme="dark"] {
   --bg-primary: var(--gray-900);
@@ -10,14 +10,101 @@
 
 [data-theme="dark"] .navbar {
   background: rgba(15, 23, 42, 0.8);
+  border-color: var(--gray-800);
+}
+
+[data-theme="dark"] .nav-link {
+  color: var(--gray-400);
+}
+
+[data-theme="dark"] .nav-link:hover,
+[data-theme="dark"] .nav-link.active {
+  color: var(--white);
 }
 
 [data-theme="dark"] .hero-card {
   background: var(--gray-800);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
 }
 
+[data-theme="dark"] .hero-badge {
+  background: var(--gray-800);
+}
+
+[data-theme="dark"] .feature-card {
+  background: var(--gray-800);
+  border-color: var(--gray-700);
+}
+
+[data-theme="dark"] .feature-card:hover {
+  border-color: var(--primary-light);
+}
+
+[data-theme="dark"] .contact-form {
+  background: var(--gray-800);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+  background: var(--gray-900);
+  border-color: var(--gray-700);
+  color: var(--gray-100);
+}
+
+[data-theme="dark"] .form-group input:focus,
+[data-theme="dark"] .form-group textarea:focus {
+  border-color: var(--primary);
+}
+
+[data-theme="dark"] .service-item {
+  background: linear-gradient(to right, rgba(99, 102, 241, 0.1), transparent);
+}
+
+[data-theme="dark"] .loader {
+  background: var(--gray-900);
+}
+
+[data-theme="dark"] .loader-spinner {
+  border-color: var(--gray-700);
+  border-top-color: var(--primary);
+}
+
+/* Theme Toggle Icons */
 [data-theme="dark"] .icon-sun { display: none; }
 [data-theme="dark"] .icon-moon { display: block; }
 
 [data-theme="light"] .icon-sun { display: block; }
 [data-theme="light"] .icon-moon { display: none; }
+
+/* Dark mode gradients */
+[data-theme="dark"] .gradient-orb {
+  opacity: 0.3;
+}
+
+[data-theme="dark"] .orb-1 {
+  background: var(--primary-light);
+}
+
+[data-theme="dark"] .orb-2 {
+  background: var(--secondary);
+}
+
+/* Scrollbar dark mode */
+[data-theme="dark"] ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: var(--gray-800);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--gray-600);
+  border-radius: 5px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-500);
+}
